@@ -1,0 +1,4 @@
+flask==2.1.1
+openai==0.10.1
+boto3==1.24.3
+python-dotenv==0.19.2
