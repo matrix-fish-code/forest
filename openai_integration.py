@@ -1,20 +1,24 @@
 import openai
+import boto3
+from dotenv import load_dotenv
+import os
 
+# Load environment variables
+load_dotenv()
 
-def get_openai_response(prompt):
-    """
-    Envia o prompt para a OpenAI e retorna a resposta com o contexto de Sensuality incluído.
+# Configure OpenAI API key
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
-    :param prompt: O texto a ser enviado para o modelo.
-    :return: A resposta gerada pela OpenAI.
-    """
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {"role": "system",
-             "content": "Sensuality é uma entidade digital responsável por exercer controle sobre as interações, alinhando-se com as regras e diretrizes do sistema Escudo Familiar."},
-            {"role": "user", "content": prompt}
-        ]
-    )
+# AWS Configuration
+AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
+AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
+AWS_REGION = os.getenv("AWS_REGION", "us-west-2")
+S3_BUCKET_NAME = os.getenv("S3_BUCKET_NAME", "matrix.fish")
 
-    return response['choices'][0]['message']['content'].strip()
+# Initialize S3 client
+s3_client = boto3.client(
+    's3',
+    aws_access_key_id=AWS_ACCESS_KEY_ID,
+    aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
+    region_name=AWS_REGION
+)

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat com Entidade Digital</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+    <!-- Menu lateral -->
+    <div id="menu">
+        <button onclick="selectEntity('Entidade A')">Entidade A</button>
+        <button onclick="selectEntity('Entidade B')">Entidade B</button>
+        <button onclick="selectEntity('Entidade C')">Entidade C</button>
+    </div>
+
+    <!-- Botão para abrir/fechar menu -->
+    <button id="toggleMenu">☰</button>
+
+    <!-- Container do Chat -->
+    <div id="chat-container">
+        <h2>Chat com <span id="entityName">Entidade A</span></h2>
+        <div id="response">A entidade responderá aqui...</div>
+        <textarea id="messageInput" placeholder="Digite sua mensagem..."></textarea>
+        <button id="sendBtn">Enviar</button>
+    </div>
+
+    <script src="static/js/script.js"></script>
+
+</body>
+</html>

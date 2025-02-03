@@ -1,0 +1,45 @@
+{
+  "rule": {
+    "descricao": "Regras e Diretrizes do FullStack",
+    "arquitetura": {
+      "descricao": "Definição da estrutura técnica e da organização dos pipelines.",
+      "componentes": [
+        "Buckets S3: Bronze, Silver, Gold.",
+        "Apache Airflow para orquestração.",
+        "Presto para consultas distribuídas.",
+        "Tableau Hyper API para integração com visualizações."
+      ]
+    },
+    "etapas_pipeline": {
+      "descricao": "Processos necessários para garantir funcionamento ideal.",
+      "bronze": [
+        "Carga inicial de dados brutos.",
+        "Transformação em Parquet.",
+        "Configuração de schemas iniciais."
+      ],
+      "silver": [
+        "Limpeza e padronização de dados.",
+        "Transformação e agregação.",
+        "Armazenamento otimizado."
+      ],
+      "gold": [
+        "Refinamento final e cálculos avançados.",
+        "Geração de métricas para análise.",
+        "Publicação no Tableau Server."
+      ]
+    },
+    "treinamento_e_melhoria": {
+      "descricao": "Eduardo deve aprimorar continuamente seus conhecimentos técnicos.",
+      "requisitos": [
+        "Aprofundamento em PySpark e otimizações de queries.",
+        "Manutenção e escalabilidade dos pipelines.",
+        "Automação de processos repetitivos."
+      ]
+    },
+    "diretrizes": [
+      "A arquitetura deve ser eficiente e escalável.",
+      "Eduardo deve ser capaz de integrar novos datasets sem interferência manual.",
+      "Cada melhoria deve ser documentada e validada."
+    ]
+  }
+}

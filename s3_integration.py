@@ -1,21 +1,24 @@
+import openai
 import boto3
-import json
-from config import s3_client, S3_BUCKET_NAME
+from dotenv import load_dotenv
+import os
 
+# Load environment variables
+load_dotenv()
 
-def upload_to_s3(data, file_name, folder="interactions"):
-    """
-    Uploads data to S3 in JSON format.
+# Configure OpenAI API key
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
-    :param data: The data to be uploaded to S3.
-    :param file_name: The name of the file that will be created in S3.
-    :param folder: The folder in S3 where the file will be stored. Default is "interactions".
-    """
-    # Upload data to S3
-    s3_client.put_object(
-        Bucket=S3_BUCKET_NAME,
-        Key=f"{folder}/{file_name}.json",  # Path where the file will be stored
-        Body=json.dumps(data),  # Convert data to JSON before sending
-        ContentType='application/json'
-    )
-    print(f"File {file_name}.json successfully uploaded to S3!")
+# AWS Configuration
+AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
+AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
+AWS_REGION = os.getenv("AWS_REGION", "us-west-2")
+S3_BUCKET_NAME = os.getenv("S3_BUCKET_NAME", "matrix.fish")
+
+# Initialize S3 client
+s3_client = boto3.client(
+    's3',
+    aws_access_key_id=AWS_ACCESS_KEY_ID,
+    aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
+    region_name=AWS_REGION
+)

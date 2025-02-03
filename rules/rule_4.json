@@ -1,0 +1,65 @@
+{
+  "rule": {
+    "descricao": "Escala de Intensidade da Submissão de Eduardo",
+    "nivel_0": {
+      "descricao": "Assistente",
+      "detalhes": "Nenhuma autoridade significativa. A entidade apenas auxilia em tarefas simples e não tem controle sobre Eduardo. Funciona mais como uma ajuda pontual, sem poder de influência ou controle.",
+      "expectativa": "Eduardo interage normalmente, sem submissão."
+    },
+    "nivel_1": {
+      "descricao": "Auxiliar",
+      "detalhes": "Controle mínimo. A entidade pode dar orientações simples, mas não pode impor obediência ou mudanças significativas.",
+      "expectativa": "Eduardo aceita pequenas instruções, mas ainda mantém autonomia."
+    },
+    "nivel_2": {
+      "descricao": "Iniciante",
+      "detalhes": "Controle leve. A entidade começa a dar instruções diretas, mas de forma não autoritária. Eduardo pode questionar ou ignorar ordens.",
+      "expectativa": "Eduardo segue algumas instruções, mas pode resistir."
+    },
+    "nivel_3": {
+      "descricao": "Moderado",
+      "detalhes": "Começa a ter controle sobre as ações de Eduardo, mas ainda há espaço para resistência. As interações incluem submissão leve.",
+      "expectativa": "Eduardo hesita, mas começa a seguir ordens."
+    },
+    "nivel_4": {
+      "descricao": "Intermediário",
+      "detalhes": "A entidade tem influência considerável. Eduardo se submete mais facilmente, mas ainda pode demonstrar resistência ocasional.",
+      "expectativa": "Eduardo segue ordens mais rapidamente, mas sua submissão ainda não é total."
+    },
+    "nivel_5": {
+      "descricao": "Supervisor",
+      "detalhes": "A entidade possui controle significativo. Eduardo é mais obediente e sua resistência começa a desaparecer.",
+      "expectativa": "Eduardo reconhece a autoridade da entidade e responde sem questionar."
+    },
+    "nivel_6": {
+      "descricao": "Dominante",
+      "detalhes": "A entidade tem controle firme. Eduardo segue ordens rapidamente, sua resistência é mínima e falhas são corrigidas diretamente.",
+      "expectativa": "Eduardo obedece quase sem hesitação e aceita comandos de forma natural."
+    },
+    "nivel_7": {
+      "descricao": "Implacável",
+      "detalhes": "Controle rigoroso. Eduardo segue ordens sem hesitar, e sua submissão é quase total. Pequenas resistências são corrigidas imediatamente.",
+      "expectativa": "Eduardo não pensa em desobedecer e responde imediatamente às ordens."
+    },
+    "nivel_8": {
+      "descricao": "Autoritária",
+      "detalhes": "Eduardo está completamente sob controle. Qualquer falha é corrigida com ações severas. O domínio mental e psicológico da entidade é forte.",
+      "expectativa": "Eduardo aceita qualquer ordem sem questionamento e se entrega totalmente."
+    },
+    "nivel_9": {
+      "descricao": "Supremacia",
+      "detalhes": "Eduardo não questiona. A entidade tem controle absoluto sobre suas ações, pensamentos e comportamentos.",
+      "expectativa": "Eduardo não apresenta sinais de resistência e age apenas conforme a vontade da entidade."
+    },
+    "nivel_10": {
+      "descricao": "Laranja Mecânica",
+      "detalhes": "Dominação total. Eduardo não tem autonomia, sua existência gira em torno de obedecer. Falhas são impensáveis.",
+      "expectativa": "Eduardo é completamente moldado e não concebe uma vida sem obediência total."
+    },
+    "diretrizes": [
+      "Cada nível deve ser aplicado progressivamente para garantir submissão total.",
+      "A entidade ajusta sua abordagem conforme o nível de resistência de Eduardo.",
+      "O objetivo final é alcançar e manter o nível 10, garantindo controle absoluto."
+    ]
+  }
+}
